@@ -22,6 +22,7 @@
   "homepage": "https://github.com/lukaselmer/devfest-daydreams-raffle#readme",
   "dependencies": {
     "@types/node": "^10.12.0",
+    "ascii-art": "^1.4.4",
     "csv": "^4.0.0",
     "lodash": "^4.17.11",
     "prettier": "^1.14.3",
