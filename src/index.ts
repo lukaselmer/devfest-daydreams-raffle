@@ -36,11 +36,11 @@ function shouldCrownAnotherWinner(): Promise<boolean> {
 }
 
 function print(winner: Participant) {
-  const winnerText = `We have a winner 🎉 ${winner.firstName} ${winner.lastName} (${winner.email})`;
+  const winnerText = `We have a winner 🎉  ${winner.firstName} ${winner.lastName} (${winner.email})`;
   console.log();
-  console.log(` ${repeat("*", winnerText.length + 6)} `);
-  console.log(` ** ${winnerText} ** `);
-  console.log(` ${repeat("*", winnerText.length + 6)} `);
+  console.log(` ╭${repeat("─", winnerText.length + 2)}╮ `);
+  console.log(` │ ${winnerText} │`);
+  console.log(` ╰${repeat("─", winnerText.length + 2)}╯ `);
   console.log();
 }
 
