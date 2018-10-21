@@ -1,2 +1,2 @@
-Order #,First Name,Last Name,Email,Ticket Type,Attendee Status
+orderId,firstName,lastName,email,ticket,status
 845377264,Lukas,Elmer,lukas.elmer@gmail.com,DevFest - Speaker / Staff,Checked In

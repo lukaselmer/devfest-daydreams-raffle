@@ -1,5 +1,8 @@
 {
   "defaultSeverity": "error",
   "extends": ["tslint:latest"],
-  "rulesDirectory": []
+  "rulesDirectory": [],
+  "rules": {
+    "curly": [false]
+  }
 }
