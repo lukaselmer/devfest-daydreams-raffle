@@ -2,9 +2,9 @@
   "name": "devfest-daydreams-raffle",
   "version": "1.0.0",
   "description": "DevFest 2018 Daydreams Raffle",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "TS_NODE_FILES=true ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "prettier": "^1.14.3",
+    "prompt-confirm": "^2.0.4",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.3"
   },
