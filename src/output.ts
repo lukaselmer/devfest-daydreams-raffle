@@ -7,12 +7,15 @@ export async function print(winner: Participant) {
   const names = `${winner.firstName} ${winner.lastName}`;
   const length = content.split('\n')[0].length;
 
+  console.log();
+  console.log();
   console.log(` ╭${repeat('─', length + 2)}╮ `);
   console.log(` │ We have a winner 🎉 ${repeat(' ', length - 'We have a winner 🎉'.length)}│`);
   for (const line of content.split('\n')) console.log(` │ ${line} │`);
   console.log(` │ ${names} ${repeat(' ', length - names.length)}│`);
   console.log(` │ ${winner.email} ${repeat(' ', length - winner.email.length)}│`);
   console.log(` ╰${repeat('─', length + 2)}╯ `);
+  console.log();
   console.log();
 }
 
