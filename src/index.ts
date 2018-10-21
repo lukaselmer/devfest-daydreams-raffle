@@ -5,7 +5,7 @@ import Confirm from "prompt-confirm";
 
 (async () => {
   const participants = shuffle(loadParticipants());
-  while (await new Confirm("Ready to get a crown a winner?").run()) {
+  while (await shouldCrownAnotherWinner()) {
     const winner = participants.pop();
     if (!winner) break;
     print(winner);
@@ -29,6 +29,10 @@ function includeParticipant({ ticket, status }: Participant) {
     ticket !== "DevFest Master of Ceremony" &&
     status === "Checked In"
   );
+}
+
+function shouldCrownAnotherWinner(): Promise<boolean> {
+  return new Confirm("Ready to get a crown a winner?").run();
 }
 
 function print(winner: Participant) {
