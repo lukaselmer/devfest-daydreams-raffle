@@ -4,6 +4,8 @@
   "description": "DevFest 2018 Daydreams Raffle",
   "main": "src/index.ts",
   "scripts": {
+    "watch": "tsc -p . -w",
+    "build": "tsc -p .",
     "start": "TS_NODE_FILES=true ts-node src/index.ts"
   },
   "repository": {
