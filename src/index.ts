@@ -15,5 +15,5 @@ import { print } from './output';
   .catch(e => console.log("Uh oh, something went wrong :'(", e));
 
 function shouldCrownAnotherWinner(): Promise<boolean> {
-  return new Confirm('Ready to get a crown a winner?').run();
+  return new Confirm('Ready to crown a winner?').run();
 }
